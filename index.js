@@ -2,7 +2,7 @@ const { Client, Events, GatewayIntentBits, EmbedBuilder } = require('discord.js'
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent, GatewayIntentBits.GuildMembers, GatewayIntentBits.GuildMessageReactions] });
 
-client.login('MTEwMDIzNjQ3MzA1MzIyMDk4NA.GirHS-.5irHO6ITcFcwhNOLpx7ouqEUzsnaiCgGsOt1A4');
+client.login('TOKEN');
 
 client.once(Events.ClientReady, c => {
 	console.log(`Ready! Logged in as ${c.user.tag}`);
